@@ -12,6 +12,26 @@
     crossorigin="anonymous"></script>
     <title>M</title>
     <style>
+        /* rem rm vw % */
+
+        /* default      =      100% = 16px, 50% = 8px, 25% = 4px, 12.5% = 2px, 6.25% = 1px, 10% = 1.51px
+        px           =      고정값
+        rem          =      최상위  // 딱, 한번의 적용.      // 최상위
+        rm           =      부모    // 여러변, 개별의 적용.  // 부모 요소 
+        vw           =      ?
+        %            =      ? */
+        
+        
+    /* .nikey{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 5000px;
+        background-color: red;
+    } */
+    html{
+        font-size: 6.25%;        
+    }
     body{
         margin: 0;
         padding: 0;
@@ -34,15 +54,29 @@
     .header_box{
         width: 100%;
         height: 100px;
-        background: linear-gradient(0deg, transparent, rgba(0,0,0, 0.4));
+        background:linear-gradient(0deg, transparent, #00000066);
+        transition: all 10s;
+    }
+    /* .moonsungmin{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        position: relative;
+        z-index: 12;
+    } */
+    .header_menu_entire{
+        width: 100%;
+        height: 100px;
     }
     .header_menu{
         width: 100%;
         max-width: 1200px;
-        height: 99px;
-        font-size: 16px;
+        height: 100px;
+        /* font-size: 10px; */
         font-weight: bold;
         margin: 0 auto;
+        position: relative;
+        z-index: 20;
     }
     .header_background{
         width: 100%;
@@ -55,11 +89,12 @@
         background-repeat: no-repeat;
     }
     .header_menu_one{
-        width: 849px;
+        width: 50%;
         display: inline-table;
         vertical-align: middle;
-        margin: 10px 0 0 0;
+        margin: -5px 0 0 10px;
     }
+    /* search */
     .menu_one{
         height: 59px;
         padding: 20px;
@@ -69,14 +104,14 @@
         vertical-align: middle;
         color: #ffffff;
         cursor: pointer;
+        font-size: 16rem;
     }
     .header_menu_three_line_blue{
         width: 100px;
         height: 5px;
         background-color: #1c69d4;
         position: relative;
-        top: -20px;
-        left: -10px;
+        top: -4px;
         display: none;
     }
     /* #header_menu_javascript{
@@ -84,27 +119,170 @@
         background-color: white;
         display: none;
     } */
+    #menu_one_one_background{
+        width: 9999px;
+        height: 61.5vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 9999;
+        top: 100px;
+        left: -3500px;
+        display: none;
+    }
     #menu_one_one{
 
     }
     #menu_one_one_javascript{
-        width: 1000px;
-        height: 47vw;
-        background-color: greenyellow;
-        display: none;
+        width: 1323.5px;
+        height: 48.29vw;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 3850px;
+    }
+    #menu_one_one_javascript_head{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+    }
+    #menu_one_one_javascript_head_line{
+        width: 94.4%;
+        height: 1px;
+        background-color: #f2f2f2;
+        margin: 0 0 0 42px;
+    }
+    #menu_one_one_javascript_head_one{
+        width: 50px;
+        height: 70px;
+        margin: 0 0 0 50px;
+        display: inline-table;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .javascript_one{
+
+    }
+    #menu_one_one_javascript_head_twp{
+        width: 50px;
+        height: 70px;
+        padding: 0 3px;
+        display: inline-table;
+        vertical-align: middle;
+        cursor: pointer;
     }
     #menu_one_one_close{
-        width: 100px;
-        height: 100px;
-        background-color: #1366d7;
-        position: relative;
-        z-index: 2;
-        left: 500px;
+        width: 50px;
+        height: 70px;
         cursor: pointer;
+        position: relative;
+        top: -2px;
+        display: inline-table;
+        vertical-align: middle;
     }
     #menu_one_one_close i{
-        font-size: 90px;
+        font-size: 23px;
         cursor: pointer;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine{
+      /* display: none; */
+      position: relative;
+      top: 0px;
+    }
+    /* .javascript_two{
+        transition: all 1s;
+    } */
+    .javascript_two_box{
+        display: none;
+        position: relative;
+        top: 0;
+    }
+    .javascript_three_box{
+        display: none;
+    }
+    .javascript_three_box_icon{
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .javascript_three_box_number{
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .javascript_three_onwer_number{
+        display: inline-table;
+        vertical-align: middle;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_thisyear{
+        font-size: 100px;
+        font-weight: 500;
+        color: #e6e6e6;
+        text-align: center;
+        margin: 35px 0 0 0;
+        letter-spacing: -7px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_one{
+        margin: 0 0 0 300px;
+        position: relative;
+        top: -10px;
+        z-index: -2;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_one img{
+        width: 500px;
+        height: 100px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_two{
+        margin:-170px 270px 0 0;
+        text-align: center;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_two img{
+        width: 230px;
+        height: 150px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_three{
+        margin: -175px 0 0 450px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_three img{
+        width: 350px;
+        height: 200px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_four{
+        margin: -260px 0 0 578px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_whypickthebmwbecauselooklikestrong{
+        width: 290px;
+        height: 50px;
+        background-color: #1366d7;
+        text-align: center;
+        line-height: 55px;
+        color: #ffffff;
+        margin: 0 0 0 520px;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to{
+        margin: 3205px 0 0 0;
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+    #menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to_i_will_hardware_yes{
+        display: inline-table;
+        vertical-align: middle;
+        width: 19.6%;
+        height: 50px;
+        text-align: center;
+        background-color: #f2f2f2;
+        line-height: 50px;
+    }
+    #hardware_icon{
+        display: inline-table;
+        vertical-align: middle;
+        margin: 0 20px 0 0;
+        color: blue;
+    }
+    #hardware_yes{
+        display: inline-table;
+        vertical-align: middle;
     }
     #menu_one_one:hover ~ .header_menu_three_line_blue{
         display: block;
@@ -131,21 +309,28 @@
         transition: all 1s;
     }
     .header_menu_two_list{
+        width: 28%;
+        height: 100px;
         display: inline-table;
         vertical-align: middle;
+        position: relative;
+        z-index: 21;
+        margin: 0 0 0 250px;
     }
     .header_menu_two{
         height: 99px;
         line-height: 59px;
         display: inline-table;
         vertical-align: middle;
+        position: relative;
+        z-index: 20;
     }
     .menu_two{
         display: inline-table;
         vertical-align: middle;
         padding: 20px;
         line-height: 59px;
-        font-size: 20px;
+        font-size: 20rem;
         color: #ffffff;
         cursor: pointer;
     }
@@ -161,12 +346,13 @@
         height: 53px;
     }
     .header_menu_three_line{
-        width: 130%;
+        width: 80%;
+        max-width: 1080px;
         height: 1px;
         background-color: rgba(255,255,255,0.4);
+        margin: 0 auto;
         position: relative;
-        top: -15px;
-        left: -10px;
+        left: -50px;
     }
 
     hr{
@@ -183,21 +369,34 @@
     .header_menu_sub_list{
         position: relative;
         left: 5%;   
+        z-index: 3;
     }
     .header_menu_sub{
         width: 255px;
-        font-size: 48px;
+        font-size: 48rem;
         margin: 0 0 16px 0;
         color: white;
         cursor: pointer;
     }
+    .undefined{
+        display: inline-table;
+        vertical-align: middle;
+        position: relative;
+        top: -50px;
+        margin: 0 200px 0 0;
+        display: none;
+    }
+    .undefined img{
+        width: 500px;
+        height: 500px;
+    }
     .header_menu_sheer{
         width: 80%;
-        font-size: 17px;
+        font-size: 17rem;
         text-align: right;
         color: white;
         position: relative;
-        top: 1%;
+        top: 2%;
     }
     .header_menu_sheer span{
         font-weight: bold;
@@ -210,6 +409,8 @@
         text-align: center;
         line-height: 52px;
         cursor: pointer;
+        font-size: 16rem;
+        font-weight: bold;
     }
     .header_menu_find:hover{
         background-color: #1653a9;
@@ -1088,9 +1289,31 @@
         background-color: blue;
         margin: 0 auto;
     } */
+    /* #mmm{
+        background-color: red;
+    } */
+    .javascript_two_box_two{
+        margin: 0 0 10px 70px;
+    }
+    .javascript_two_box_three{
+        margin: 0 0 0 70px;
+    }
+    .javascript_two_box_three_icon{
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .javascript_two_box_three_owner{
+        display: inline-table;
+        vertical-align: middle;
+    }
+    .javascript_three_box_in{
+        display: inline-table;
+        vertical-align: middle;
+    }
     </style>
 </head>
 <body>
+    <div class="nikey"></div>
     <div class="default_margin">
 
     <div class="header_box"></div>
@@ -1098,50 +1321,221 @@
 
         <div class="header_background">
 
-                <div class="header_menu">
-                    <div class="header_menu_one">
-                        <div class="menu_one" id="menu_one_one">Models</div>
-                        <div class="menu_one" id="menu_one_two">Find & Buy</div>
-                        <div class="menu_one" id="menu_one_three">Electromobility</div>
-                        <div class="menu_one" id="menu_one_four">Services</div>
-                        <div class="menu_one" id="menu_one_five">Discover</div>
-                        <div class="header_menu_three_line"></div>
-                        <div class="header_menu_three_line_blue"></div>
+                <!-- <div class="moonsungmin"></div> -->
+                    <div class="header_menu_entire">
+                        <div class="header_menu">
 
-                        <!-- javascript -->
-                        <!-- <div id="header_menu_javascript"></div> -->
+                            <div class="header_menu_one">
+                                <div class="menu_one" id="menu_one_one">Models</div>
+                                <div class="menu_one" id="menu_one_two">Find & Buy</div>
+                                <div class="menu_one" id="menu_one_three">Electromobility</div>
+                                <div class="menu_one" id="menu_one_four">Services</div>
+                                <div class="menu_one" id="menu_one_five">Discover</div>
+                            </div>
 
-                        <!-- <div id="menu_one_one_javascript">
-                            <div id="menu_one_one_close"><i class="fa-solid fa-xmark"></i></div>
-                        </div> -->
+                            <div class="header_menu_two_list">
 
+                                <div class="header_menu_two">
+                                    <div class="menu_two"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    <div class="menu_two"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="menu_two"><i class="fa-solid fa-user"></i></div>
+                                    <div class="menu_two"><i class="fa-solid fa-cart-shopping"></i></div> 
+                                </div>
 
+                                <div class="header_menu_three"><img src="imgs/2.svg" alt=""></div>
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="header_menu_two_list">
-                        <div class="header_menu_two">
-                            <div class="menu_two"><i class="fa-solid fa-magnifying-glass"></i></div>
-                            <div class="menu_two"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="menu_two"><i class="fa-solid fa-person"></i></div>
-                            <div class="menu_two"><i class="fa-solid fa-cart-shopping"></i></div> 
+                    <!--  -->
+                    <div class="header_menu_three_line"></div>
+                    <div class="header_menu_three_line_blue"></div>
+
+                
+                    <!-- <hr> -->
+
+                    <div class="header_menu_sheer">Sheer Driving <b>Pleasure</b></div>
+                    <div class="header_menu_sub_list">  
+                        <div class="header_menu_sub">THE NEW 3</div>
+                        <a href=""><div class="header_menu_find">모델 정보</div></a>
+                    </div>  
+
+        </div>
+        
+
+
+        <!-- javascript -->
+        <div id="menu_one_one_background">
+            <div id="menu_one_one_javascript">
+
+
+                <div id="menu_one_one_javascript_head">
+
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_one">전체</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_two">1</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_three">2</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_four">3</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_five">4</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_six">5</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_seven">6</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_eight">7</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_nine">8</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_ten">Z</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_eleven">i</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_twelve">X</div>
+                    <div id="menu_one_one_javascript_head_twp" class="javascript_thirteen">M</div>
+
+                    <!-- <div class="mmmm">m</div> -->
+                    <div id="menu_one_one_close"><i class="fa-solid fa-xmark"></i></div>
+
+                </div>
+
+                <div id="menu_one_one_javascript_head_line"></div>
+
+
+
+                <!-- javascript click event one-->
+                <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine">
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_thisyear">All Models</div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_one"><img src="../HomePage_BMW-10-13/imgs/street.webp" alt=""></div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_two"><img src="../HomePage_BMW-10-13/imgs/yellow.webp" alt=""></div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_three"><img src="../HomePage_BMW-10-13/imgs/white.webp" alt=""></div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_ihavethebmwkey_four"><img src="../HomePage_BMW-10-13/imgs/black.webp" alt=""></div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_whypickthebmwbecauselooklikestrong">BMW의 모든 모델 보기</div>
+                </div>
+
+                
+                <!-- two -->
+                <div class="javascript_two_box">
+                    <div class="javascript_two_box_one"><img src="../HomePage_BMW-10-13/imgs/jv_1.webp" alt=""></div>
+
+                    <div class="javascript_two_box_two">
+                        <div class="javascript_two_box_two_title">BMW 1시리즈</div>
+                        <div class="javascript_two_box_two_type">가솔린 ∙ 디젤</div>
+                    </div>
+
+                    <div class="javascript_two_box_three">
+                        <div class="javascript_two_box_three_box">
+                            <div class="javascript_two_box_three_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_two_box_three_owner">내 차량 만들기</div>
                         </div>
-                        <div class="header_menu_three">
-                            <img src="imgs/2.svg" alt="">
+                        <div class="javascript_two_box_three_box">
+                            <div class="javascript_two_box_three_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_two_box_three_owner">내 차량 찾기</div>
+                        </div>
+                        <div class="javascript_two_box_three_box">
+                            <div class="javascript_two_box_three_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_two_box_three_owner">자세히 보기</div>
+                        </div>
+                        <!-- > + ~ $ % & -  -->
+                    </div>
+
+                </div> 
+
+                <!-- three -->
+                <div class="javascript_three_box">
+                    <div class="javascript_three_box_in">
+                        <div class="javascript_three_box_img"><img src="../HomePage_BMW-10-13/imgs/jv_2.webp" alt=""></div>
+                        <div class="javascript_three_box_type">
+                            <div class="javascript_three_box_type_one">BMW 뉴 2시리즈 액티브 투어러</div>
+                            <div class="javascript_three_box_type_two">디젤</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">내 차량 만들기</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">지세히 보기</div>
+                        </div>
+                    </div>
+                    <div class="javascript_three_box_in">
+                        <div class="javascript_three_box_img"><img src="../HomePage_BMW-10-13/imgs/jv_3.webp" alt=""></div>
+                        <div class="javascript_three_box_type">
+                            <div class="javascript_three_box_type_one">BMW M249i xDrive 쿠페</div>
+                            <div class="javascript_three_box_type_two">가솔린</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">내 차량 만들기</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">자세히 보기</div>
+                        </div>
+                    </div>
+                    <div class="javascript_three_box_in">
+                        <div class="javascript_three_box_img"><img src="../HomePage_BMW-10-13/imgs/jv_4.webp" alt=""></div>
+                        <div class="javascript_three_box_type">
+                            <div class="javascript_three_box_type_one">BMW 2시리즈 그란 쿠페</div>
+                            <div class="javascript_three_box_type_two">가솔린 ∙ 디젤</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">내 차량 만들기</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">내 차량 찾기</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">자세히 보기</div>
+                        </div>
+                    </div>
+                    <div class="javascript_three_box_in">
+                        <div class="javascript_three_box_img"><img src="../HomePage_BMW-10-13/imgs/jv_5.webp" alt=""></div>
+                        <div class="javascript_three_box_type">
+                            <div class="javascript_three_box_type_one">BMW M2 컴페티션</div>
+                            <div class="javascript_three_box_type_two">가솔린</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">내 차량 찾기</div>
+                        </div>
+                        <div class="javascript_three_box_onwer">
+                            <div class="javascript_three_box_icon"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="javascript_three_box_number">자세히 보기</div>
                         </div>
                     </div>
                 </div>
 
-            <!-- <hr> -->
+
+                <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to">
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to_i_will_hardware_yes">
+                        <div id="hardware_icon"><i class="fa-solid fa-car"></i></div>
+                        <div id="hardware_yes">시승 신청</div>
+                    </div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to_i_will_hardware_yes">
+                        <div id="hardware_icon"><i class="fa-solid fa-note-sticky"></i></div>
+                        <div id="hardware_yes">카탈로그 다운로드</div>
+                    </div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to_i_will_hardware_yes">
+                        <div id="hardware_icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div id="hardware_yes">딜러 위치</div>
+                    </div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to_i_will_hardware_yes">
+                        <div id="hardware_icon"><i class="fa-regular fa-file-zipper"></i></div>
+                        <div id="hardware_yes">가격표</div>
+                    </div>
+                    <div id="menu_one_one_javascript_bmw_m8_yellow_is_mine_i_will_hardware_and_software_hardware_is_fun_software_is_have_to_i_will_hardware_yes">
+                        <div id="hardware_icon"><i class="fa-solid fa-car-side"></i></div>
+                        <div id="hardware_yes">내 차량 찾기</div>
+                    </div>
+                </div>
 
 
-            <div class="header_menu_line"></div>
-            <div class="header_menu_sheer">Sheer Driving <b>Pleasure</b></div>
-            <div class="header_menu_sub_list">  
-                <div class="header_menu_sub">THE NEW 3</div>
-                <div class="header_menu_find">더 알아보기</div>
-            </div>  
+            </div>
         </div>
 
+
+
+
+
+
+        <!--  -->
         <div class="main_two_area">
                 <div class="main_one_section">
                     <div class="main_one_section_box">
@@ -1721,20 +2115,82 @@
 
 
         <script>
-            $('#menu_one_one').click(function(){
-                $('#menu_one_one_javascript').slideToggle()
-            });
-
             // $('#menu_one_one').click(function(){
-            //     $('.header_menu').css('background-color', 'white')
+            //     $('#menu_one_one_background').slideDown('fast')
+            //     $('.header_menu').css('background-color','white')
+
+            //     // $('#menu_one_one_background').slideUp('fast');
             // });
 
-            $('#menu_one_one_close').click(function(){
-                $('#menu_one_one_javascript').slideUp('fast')
+            // $('#menu_one_one').click(function(){
+            //     $('#menu_one_one_background').slideUp('fast')
+            // });
+
+
+            $('#menu_one_one').click(function(){
+                // for(let m = 0; m < 10; m++){
+                // while(true){
+                
+                // contains visible true false % hasclass removeclass addclass
+                if($('#menu_one_one_background').is(':hidden') == true)
+                {
+                    $('#menu_one_one_background').slideDown('400')
+                    $('.header_box').css("background", "white")
+                    $(".header_box").css("height", )
+                    $('.header_menu_entire').css("background-color", "white")
+                    $(".header_menu_entire").css("transition", "1s")
+                    $('.menu_one').css("color","#000000")
+                    $('.menu_two').css("color","#000000")
+                    // $('@menu_one_one').removeClass(r);
+                    // number++;
+                    // reset;
+                    // startl;
+                    // wow;
+                    // click = click + 1;
+                }
+                else
+                {
+                    $('#menu_one_one_background').slideUp('400', function(){ $('.header_box').css({"background" : ""})})
+                    // 
+                    $(".header_menu_entire").css("background-color", "")
+                    $(".header_menu_entire").css("transition", "1s")
+                    $('.menu_one').css("color", "")
+                    $('.menu_two').css("color", "")
+                    // $(".header_box").css("transition", "1s")
+                    // $('.header_box').css({"transition" : " 0deg 4s", "background-color" : "#00000066"})
+                    // $('#menu_one_one').addClass(r);
+                    // number++;
+                };
+                
+                // for(let m = 0; m < 10; m++){}
             });
 
+            $(".javascript_one").click(function(){
+                $("#menu_one_one_javascript_bmw_m8_yellow_is_mine").css("display","block")
+                $(".javascript_two_box").css("display","none")
+                $(".javascript_three_box").css("display", "none")
+                // $("#menu_one_one_javascript_bmw_m8_yellow_is_mine").css("transition","10s")
+            })
+                // $("#menu_one_one_javascript_bmw_m8_yellow_is_mine").css("transition","2s")
 
 
+                // $('.nikey').transition({
+                //     rotate3d:'180deg'
+                // })
+
+
+            $(".javascript_two").click(function(){
+                $(".javascript_two_box").css("display","block")
+                // $(".javascript_two_box").css("transition", "5s")
+                $("#menu_one_one_javascript_bmw_m8_yellow_is_mine").css("display","none")
+                $(".javascript_three_box").css("display","none")
+            })
+
+            $(".javascript_three").click(function(){
+                $(".javascript_three_box").css("display", "block")
+                $("#menu_one_one_javascript_bmw_m8_yellow_is_mine").css("display","none")
+                $(".javascript_two_box").css("display", "none")
+            })
         </script>
 </body>
 </html>
